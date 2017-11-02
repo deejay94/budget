@@ -1,0 +1,10 @@
+<h3>Edit Budget Name</h3>
+<form {{action 'editBudget' on='submit'}}>
+  {{input
+    placeholder='Edit budget Name'
+    value=this.name}}
+    {{input
+      placeholder='Edit budget Goal'
+      value=this.goal}}
+  <button type="submit">Save</button>
+</form>
