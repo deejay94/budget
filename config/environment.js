@@ -49,9 +49,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/budget';
- ENV.locationType = 'hash';
- ENV.apiHost = 'https://deejay94.github.io/budget';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
