@@ -1,8 +1,8 @@
 /* jshint node: true */
 
-module.exports = function (environment) {
-  'use strict';
-  const ENV = {
+module.exports = function(environment) {
+  'use strict'
+  var ENV = {
     modulePrefix: 'budget',
     environment: environment,
     rootURL: '/',
@@ -11,7 +11,8 @@ module.exports = function (environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-      },
+      }
+    },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
         Date: false,
@@ -49,8 +50,10 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.locationType = 'hash';
-  }
+  ENV.rootURL = '/budget';
+  ENV.locationType = 'hash';
+  ENV.apiHost = 'https://budget1-api.herokuapp.com/';
+}
 
   return ENV;
 };
