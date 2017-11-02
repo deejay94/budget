@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('users');
   this.route('budgets');
   this.route('budget', { path: '/budget/:budget_id' });
+  this.route('new');
 });
 
 export default Router;
