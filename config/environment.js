@@ -3,7 +3,7 @@
 module.exports = function (environment) {
   'use strict';
   const ENV = {
-    modulePrefix: 'budget',
+    modulePrefix: 'ga-wdi-boston.ember-auth',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -49,9 +49,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/budget';
- ENV.locationType = 'hash';
- ENV.apiHost = 'https://deejay94.github.io/budget';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
