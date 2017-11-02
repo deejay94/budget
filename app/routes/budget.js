@@ -9,9 +9,10 @@ actions: {
     budget.destroyRecord();
     this.transitionTo('budgets');
   },
-  editBudget(budget, name, goal) {
+  editBudget(budget, name, goal, actual) {
   budget.set('name', name);
   budget.set('goal', goal);
+  budget.set('actual', actual);
   budget.save();
   }
 }
