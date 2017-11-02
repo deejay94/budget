@@ -1,0 +1,10 @@
+<h1>Create new Budget</h1>
+<form {{action 'createBudget' on='submit'}}>
+  {{input
+    placeholder='New Budget Name'
+    value=newBudget.name}}
+    {{input
+      placeholder='New Budget Name'
+      value=newBudget.goal}}
+  <button type='submit'>Submit</button>
+</form>
