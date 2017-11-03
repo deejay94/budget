@@ -9,6 +9,11 @@ export default DS.Model.extend({
   difference: Ember.computed('goal', 'actual', function() {
     let goal = this.get('goal');
     let actual = this.get('actual');
-    return (goal - actual);
-  })
-});
+
+      if (goal > actual) {
+        return `You spent $${(goal - actual)} less than your goal! Good job!`
+      } else {
+        return `You spent $${(goal - actual)*(-1)} more than your goal! Do better!`
+      }
+    })
+})
