@@ -12,8 +12,9 @@ export default DS.Model.extend({
 
       if (goal > actual) {
         return `You spent $${(goal - actual)} less than your goal! Good job!`
+        // return ('You spent $' + (goal-actual) + ' less than your goal! Good job!')
       } else {
-        return `You spent $${(goal - actual)*(-1)} more than your goal! Do better!`
+        return `You spent $${(actual - goal)} more than your goal! Do better!`
       }
     })
 })

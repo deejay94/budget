@@ -5,9 +5,11 @@ export default Ember.Route.extend({
   return this.get('store').findRecord('budget', params.budget_id);
 },
 actions: {
-  deleteBudget(budget) {
-    budget.destroyRecord();
-    this.transitionTo('budgets');
+  deleteBudget (budget) {
+    budget.destroyRecord()
+    .then(()=>{
+         this.transitionTo('budgets');
+    })
   },
   editBudget(budget, name, goal, actual) {
   budget.set('name', name);
@@ -16,4 +18,4 @@ actions: {
   budget.save();
   }
 }
-});
+})

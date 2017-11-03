@@ -2,11 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   name: null,
-  goal: 0,
-  actual: 0,
+  goal: null,
+  actual: null,
   actions: {
     editBudget() {
-      return this.sendAction('editBudget', this.get('budget'), this.name, this.goal, this.actual);
+      this.sendAction('editBudget', this.get('budget'), this.name, this.goal, this.actual);
+      this.set('name', null);
+      this.set('goal', null);
+      this.set('actual', null);
     }
   }
 });
