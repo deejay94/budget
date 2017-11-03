@@ -16,6 +16,7 @@ module.exports = function(environment) {
         // Prevent Ember Data from overriding Date.parse.
         Date: false,
     },
+  },
 
     APP: {
       // Here you can pass flags/options to your application instance
