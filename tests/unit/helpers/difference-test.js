@@ -1,5 +1,5 @@
 
-import { difference } from 'ga-wdi-boston.ember-auth/helpers/difference';
+import { difference } from 'budget/helpers/difference';
 import { module, test } from 'qunit';
 
 module('Unit | Helper | difference');
