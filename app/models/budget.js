@@ -13,6 +13,6 @@ export default DS.Model.extend({
   isOverBudget: Ember.computed('goal', 'actual', function() {
     let goal = this.get('goal');
     let actual = this.get('actual');
-    return goal < actual;
+    return Math.abs(goal < actual);
   })
 })
