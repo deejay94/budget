@@ -1,1 +1,5 @@
-{{budget.difference}}
+{{#if budget.isOverBudget}}
+   <p class="red">You spent ${{budget.difference}} more than your goal! Do better!</p>
+{{else}}
+   <p class="green">You spent ${{budget.difference}} less than your goal! Good job!</p>
+{{/if}}
