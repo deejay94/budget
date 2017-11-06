@@ -2,16 +2,16 @@
   <div class="col-s12-m12 stats">
   <div class="col-s12-m6 thumbsdown">
   <img src="thumbsdown.jpg">
-  <div class="red">
   {{#each model as |budget|}}
   {{#if budget.isOverBudget}}
-    <ul>
+  <div class="red">
+    <p>
 {{budget.name}}
-</ul>
+</p>
+</div>
 {{/if}}
 {{/each}}
   </div>
-</div>
 
 <div class="col-s12-m6 thumbsup">
 <img src="thumbsup.png">
