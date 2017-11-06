@@ -8,14 +8,26 @@ actions: {
   deleteBudget (budget) {
     budget.destroyRecord()
     .then(()=>{
-         this.transitionTo('budgets');
+      this.get('flashMessages').success('Successfully deleted a Budget');
+      this.transitionTo('budgets');
+    })
+    .catch(() => {
+      budget.rollbackAttributes();
+      this.get('flashMessages').danger('Failed to delete budget');
     })
   },
-  editBudget(budget, name, goal, actual) {
-  budget.set('name', name);
-  budget.set('goal', goal);
-  budget.set('actual', actual);
-  budget.save();
-  }
+  editBudget (budget, name, goal, actual) {
+    budget.set('name', name);
+    budget.set('goal', goal);
+    budget.set('actual', actual);
+    budget.save()
+    .then(() => {
+      this.get('flashMessages').success('Successfully edited your budget');
+      })
+    .catch(() => {
+        budget.rollbackAttributes();
+        this.get('flashMessages').danger('Failed to edit your budget');
+      })
+}
 }
 })
