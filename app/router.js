@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('budgets');
   this.route('budget', { path: '/budget/:budget_id' });
   this.route('new');
+  this.route('stats');
 });
 
 export default Router;

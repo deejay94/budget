@@ -1,0 +1,19 @@
+<p> Today's stats:
+  {{#each model as |budget|}}
+  <div class="stats">
+    {{#if budget.isOverBudget}}
+    <div class="red thumbsdown">
+      <ul>
+  {{budget.name}}
+</ul>
+</div>
+{{else}}
+<div class="green thumbsup">
+  <ul>
+  {{budget.name}}
+</ul>
+</div>
+  {{/if}}
+  </div>
+  {{/each}}
+</p>

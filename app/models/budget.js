@@ -15,4 +15,4 @@ export default DS.Model.extend({
     let actual = this.get('actual');
     return Math.abs(goal < actual);
   })
-})
+ })
