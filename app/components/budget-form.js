@@ -12,6 +12,12 @@ actions: {
     this.set('newBudget.name', null);
     this.set('newBudget.goal', null);
     this.set('newBudget.actual', null);
+  },
+  cancel() {
+    this.sendAction('cancel', this.get('newBudget'));
+    this.set('newBudget.name', null);
+    this.set('newBudget.goal', null);
+    this.set('newBudget.actual', null);
   }
 }
 });

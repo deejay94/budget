@@ -1,5 +1,5 @@
 <h1>Create new Budget</h1>
-<form {{action 'createBudget' on='submit'}}>
+<form>
   {{input
     placeholder='New Budget Name'
     value=newBudget.name}}
@@ -9,5 +9,5 @@
       {{input
         placeholder='Enter amount you have spent so far'
         value=newBudget.actual}}
-  <button type='submit'>Submit</button>
+  <button type='submit' {{action 'createBudget'}}>Submit</button> <button {{action 'cancel'}}>Cancel</button>
 </form>
