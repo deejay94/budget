@@ -23,12 +23,13 @@
 
 <div class="col-s12-m6 thumbsup">
 <img src="thumbsup.png">
-<div class="green">
 {{#each model as |budget|}}
 {{#unless budget.isOverBudget}}
+<div class="green">
   <ul>
 {{#link-to 'budget' budget}}{{budget.name}}{{/link-to}}
 </ul>
+</div>
 {{/unless}}
 {{/each}}
 </div>
