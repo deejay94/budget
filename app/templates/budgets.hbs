@@ -1,7 +1,37 @@
 {{#link-to 'new'}}Create New Budget List{{/link-to}}
 
-{{#each model as |budget|}}
+{{!-- {{#each model as |budget|}}
 <div>
 {{#link-to 'budget' budget}}{{budget.name}}{{/link-to}}
 </div>
+{{/each}} --}}
+
+<p> Monthly stats:
+  <div class="col-s12-m12 stats">
+  <div class="col-s12-m6 thumbsdown">
+  <img src="thumbsdown.jpg">
+  {{#each model as |budget|}}
+  {{#if budget.isOverBudget}}
+  <div class="red">
+    <p>
+{{budget.name}}
+</p>
+</div>
+{{/if}}
 {{/each}}
+  </div>
+
+<div class="col-s12-m6 thumbsup">
+<img src="thumbsup.png">
+<div class="green">
+{{#each model as |budget|}}
+{{#unless budget.isOverBudget}}
+  <ul>
+{{#link-to 'budget' budget}}{{budget.name}}{{/link-to}}
+</ul>
+{{/unless}}
+{{/each}}
+</div>
+</div>
+</div>
+</p>
