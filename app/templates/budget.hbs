@@ -2,6 +2,8 @@
   {{edit-name-form budget=model editBudget='editBudget' editActual='editActual'}}
   {{budget-list budget=model deleteBudget='deleteBudget'}}
   Budget Goal: {{budget-goal budget=model}}
-  Actual Budget: {{budget-actual budget=model}}
+  {{!-- Actual Budget: {{budget-actual budget=model}} --}}
+
+  Actual Budget: <li> ${{model.actual}} </li>
 
   {{#link-to 'budgets'}}Back{{/link-to}}
