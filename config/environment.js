@@ -52,6 +52,6 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.rootURL = '/budget';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://budgets-api.herokuapp.com/';  }
+    ENV.apiHost = 'https://budget1-api.herokuapp.com/';  }
   return ENV;
 };
