@@ -1,5 +1,5 @@
 # About this app
-![Budget-Tracker](https://imgur.com/a/3ODh8)
+![Budget-Tracker](screenshot.png)
 
 This app is called "Budget Tracker" and it allows users to track their budget by inputting their goal budget and what they actually spent. The "Budget-Tracker" then calculates the difference and tells the user if they are over or under budget. There are two columns on the "budgets" route and if the user is over budget, the budget name goes into the "thumbs up" column and if not, it goes into the "thumbs down" column. I made the background the color of money. It's called "dollar bill".
 
