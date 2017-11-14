@@ -1,31 +1,57 @@
+
+.good {
+  border: 2px solid #fbfdff;
+  border-color: gold;
+  text-align: center;
+  width: 500px;
+  font-size: 24px;
+  margin: 30px auto 70px;
+}
+
 body {
-  background-image: url('https://image.freepik.com/free-vector/money-background-design_1212-560.jpg');
+  background-color: gray;
   background-position: bottom;
 }
 
+.ex {
+  color: red;
+}
+
 .green {
-  color: #006400;
   border: 2px solid #fbfdff;
-  border-color: black;
+  border-color: gold;
   margin-top: 20px;
+  text-align: center;
+  width: 300px;
+  font-size: 24px;
 }
 
 img {
   width: 15%;
 }
 
-.red {
-  color: red;
-  border: 2px solid #fbfdff;
-  border-color: black;
+.month {
+  text-align: center;
+  font-size: 42px;
+  padding: 15px;
 }
 
-.thumbsup {
-  margin-top: 50px;
+.name {
+  margin-top: 55px;
+}
+
+.red {
+  border: 2px solid #fbfdff;
+  border-color: red;
+  text-align: center;
+  float: right;
+  margin-left: 200px;
+  width: 300px;
+  font-size: 24px;
 }
 
 .title {
-  color: white;
+  color: gold;
   text-align: center;
   padding: 20px;
 }
