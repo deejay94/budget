@@ -1,4 +1,32 @@
 
+.bad {
+    border: 2px solid #fbfdff;
+    border-color: red;
+    text-align: center;
+    width: 500px;
+    font-size: 24px;
+    margin: 30px auto 70px;
+  }
+
+body {
+  background-color: gray;
+  background-position: bottom;
+}
+
+caption {
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.ex {
+  color: red;
+}
+
+.goal, .actual {
+  list-style-type: none;
+}
+
 .good {
   border: 2px solid #fbfdff;
   border-color: gold;
@@ -6,15 +34,6 @@
   width: 500px;
   font-size: 24px;
   margin: 30px auto 70px;
-}
-
-body {
-  background-color: gray;
-  background-position: bottom;
-}
-
-.ex {
-  color: red;
 }
 
 .green {
@@ -30,6 +49,10 @@ img {
   width: 15%;
 }
 
+.list {
+  margin-top: 55px;
+}
+
 .month {
   text-align: center;
   font-size: 42px;
@@ -37,7 +60,7 @@ img {
 }
 
 .name {
-  margin-top: 55px;
+  font-size: 24px;
 }
 
 .red {
@@ -48,6 +71,14 @@ img {
   margin-left: 200px;
   width: 300px;
   font-size: 24px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 35px;
 }
 
 .title {
