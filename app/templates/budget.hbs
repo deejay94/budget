@@ -15,7 +15,4 @@
     </tr>
   </table>
 
-
-
-  {{!-- Actual Budget: <li> ${{model.actual}} </li> --}}
-  <button {{action 'deleteBudget'}}>Delete</button>
+  {{delete-budget budget=model deleteBudget='deleteBudget'}}
