@@ -1,4 +1,9 @@
 
+.about {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
 .bad {
     border: 2px solid #fbfdff;
     border-color: red;
@@ -49,6 +54,20 @@ img {
   width: 15%;
 }
 
+.index {
+  border: .5em solid black;
+  padding: 20px;
+  width: 500px;
+  height: 500px;
+  border-top-color: gold;
+  border-right-color: red;
+  border-bottom-color: gold;
+  border-left-color: red;
+  border-style: groove;
+  margin: 20px auto;
+  text-align: center;
+}
+
 .list {
   margin-top: 55px;
 }
@@ -85,4 +104,8 @@ th, td {
   color: gold;
   text-align: center;
   padding: 20px;
+}
+
+.wink {
+  width: 3%;
 }
