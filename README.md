@@ -26,9 +26,9 @@ CSS
 My first step was to create the ERD. Then, I made the wireframe. When I had a good idea of what I wanted to do, I made a schedule. I wrote down everything I wanted to complete on Day 1. As I finished the tasks, I checked them off. I did the same thing with Day 2. By Day 2, I was finished with version 1 of my project. I decided to do my version 2, which was adding the "actual" attribute. I created a branch for each feature that I worked on and worked on committing often. I used the notes I took in class to help me with each step. I also opened up issues and asked my classmates if I had any problems. I wanted to do Ember to challenge myself. I'm glad that I took on the challenge.
 
 ## User Stories
--As a user, I would like to create a budget.
--As a user, I would like to make a list of the things I want to keep track of.
--As a user, I want to be able to edit and delete my lists.
+1. As a user, I would like to create a budget.
+2. As a user, I would like to make a list of the things I want to keep track of.
+3. As a user, I want to be able to edit and delete my lists.
 
 ## Unsolved Problems
 
